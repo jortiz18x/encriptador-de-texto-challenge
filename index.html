@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <img src="assets/Logo.png" alt="Logo Alura">
     </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Ingrese el texto aquí">
-            <img src="assets/Vector.png" alt="Vector de exclamación">
-            <p>Solo letras y minúsculas sin acentos</p>
-            <input type="button" value="Encriptar">
-            <input type="button" value="Desencriptar">
+    <main class="panel_principal">
+        <section class="panel_principal_text_input">
+            <textarea class="main-text-input" placeholder="Ingrese el texto aquí"></textarea>
+            <br>
+            <section class="panel_principal_text_input_info">
+                <img src="assets/Vector.png" alt="Vector de exclamación">
+                <p>Solo letras y minúsculas sin acentos</p>
+            </section>
+            <section>
+                <input type="button" value="Encriptar">
+                <input type="button" value="Desencriptar">
+            </section>
         </section>
         <section>
             <div>
