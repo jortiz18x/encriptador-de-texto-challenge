@@ -14,20 +14,29 @@
     }
 
     header{
-        margin: 2%;
+        margin: 3%;
+        position: relative;
+        z-index: 1;
     }
 
     .panel_principal{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 5% 5% 5% 15%;
+        margin: 5% 5% 5% 12.5%;
         justify-content: center;
         gap: 100px;
+        z-index: 2;
+        position: absolute;
+        padding: 9% 0% 0% 0%;
+        height: 100px;
+        width: 80%;
     }
 
     .panel_principal_text_input{
         width: 50%;
+        margin: 0%;
+        padding: 5% 0% 0% 0%;
         display: flex;
         flex-direction: column;
     }
@@ -38,9 +47,15 @@
         height: 435px;
         color: #FF4C4C;
         font-family: "Inter", sans-serif;
-        font-size: 2em;
+        font-size: 1.75em;
         background-color: transparent;
         padding: 5px;
+        border-color: transparent;
+    }
+
+    .main-text-input:focus{
+        border: none;
+        outline: none;
     }
 
     ::placeholder{
@@ -49,7 +64,65 @@
 
     .panel_principal_text_input_info{
         display: flex;
-        gap: 10px;
+        gap: 5px;
         color: white;
-        font-size: 0.75em;
+        font-size: 0.6em;
+    }
+
+    .panel_principal_text_input_info_imagen{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .panel_principal_text_input_buttons{
+        margin: 2%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .panel_principal_text_input_option_1{
+        padding: 3% 20% 3% 20%;
+        border-radius: 18px;
+        font-size: 11px;
+        color: white;
+        background-color: #FF4C4C;
+        border-color: transparent;
+    }
+
+    .panel_principal_text_input_option_2{
+        padding: 3% 20% 3% 20%;
+        border-radius: 18px;
+        font-size: 11px;
+        color: #333333;
+        background-color: #F3FEB8;
+        border-color: transparent;
+    }
+
+    .panel_secundario_resultado{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 27.5%;
+        height: 700px;
+        border-radius: 32px;
+        text-align: center;
+        color: #343A40;
+    }
+
+    .panel_secundario_resultado_imagen{
+        width: 80%;
+    }
+
+    .panel_secundario_resultado_no_texto_título{
+        padding: 0% 10% 0% 10%;
+        line-height: normal;
+    }
+
+    .panel_secundario_resultado_no_texto_contenido{
+        padding: 5% 10% 0% 10%;
+        font-size: 11px;
+        line-height: normal;
     }
