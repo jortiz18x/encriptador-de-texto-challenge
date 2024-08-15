@@ -12,25 +12,28 @@
     </header>
     <main class="panel_principal">
         <section class="panel_principal_text_input">
-            <textarea class="main-text-input" placeholder="Ingresa el texto aquí"></textarea>
+            <textarea id="mainTextInput" class="main-text-input" placeholder="Ingresa el texto aquí"></textarea>
             <br>
             <section class="panel_principal_text_input_info">
                 <img class="panel_principal_text_input_info_imagen" src="assets/Vector.png" alt="Vector de exclamación">
                 <p>Solo letras y minúsculas sin acentos</p>
             </section>
             <section class="panel_principal_text_input_buttons">
-                <input class= "panel_principal_text_input_option_1" type="button" value="Encriptar">
-                <input class= "panel_principal_text_input_option_2" type="button" value="Desencriptar">
+                <input id="EncryptButton" onclick="Encrypt()" class="panel_principal_text_input_option_1" type="button" value="Encriptar">
+                <input onclick="Desencrypt()" class="panel_principal_text_input_option_2" type="button" value="Desencriptar">
             </section>
         </section>
-        <section class="panel_secundario_resultado">
-                <img class="panel_secundario_resultado_imagen" src="assets/Muñeco.png" alt="Muñeco">
-                <h3 class="panel_secundario_resultado_no_texto_título">Ningún mensaje fue encontrado</h3>
-                <p class="panel_secundario_resultado_no_texto_contenido">Ingrese el texto que desees encriptar o desencriptar.</p>
+        <section id="panel_secundario_resultado" class="panel_secundario_resultado">
+                <img id="imagenMainTextInputEmpty" class="panel_secundario_resultado_imagen" src="assets/Muñeco.png" alt="Muñeco">
+                <h3 id="titleMainTextInputEmpty" class="panel_secundario_resultado_no_texto_título">Ningún mensaje fue encontrado</h3>
+                <p id="textMainTextInputEmpty" class="panel_secundario_resultado_no_texto_contenido">Ingrese el texto que desees encriptar o desencriptar.</p>
+                <p id="textMainTextInputSuccess" class="panel_secundario_resultado_success">Texto.</p>
+                <input id="copyTextButton" onclick="Copy()" class="copy_tex_option" type="button" value="Copiar">
         </section>
     </main>
     <footer class="footer">
         <p>© 2024 Juan Sebastián Ortiz Gutiérrez. Todos los derechos reservados.</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

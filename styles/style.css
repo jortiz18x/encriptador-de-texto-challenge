@@ -143,6 +143,37 @@
         line-height: normal;
     }
 
+    .panel_secundario_resultado_success{
+        width: 85%;
+        height: 80%;
+        padding: 7.5% 12.5% 7.5% 12.5%;
+        overflow-wrap: break-word;
+        font-size: 1.5rem;
+        line-height: normal;
+        text-align: justify;
+    }
+
+    .copy_tex_option{
+        width: 85%;
+        margin: 2% 0% 7.5% 0%;
+        padding: 5% 0% 5% 0%;
+        border-radius: 1.125rem;
+        font-size: 1rem;
+        color: #f46464;
+        background-color: transparent;
+        border-color: #f46464;
+    }
+
+    .copy_tex_option:hover{
+        border: 1px solid #f46464;
+        background-color: #e2e2e2;
+    }
+
+    .copy_tex_option:active{
+        border: 2px solid #f46464;
+        background-color: #e2e2e2;
+    }
+
     .footer{
         color:#333333;
         background-color: #c76b8e;
@@ -239,6 +270,10 @@
             margin: 2.5% 0% 4% 0%;
             font-size: 1.175rem;
         }
+
+        .copy_tex_option{
+            padding: 3% 0% 3% 0%;
+        }
     }
 
 
@@ -326,5 +361,9 @@
             padding: 0% 10% 0% 10%;
             margin: 5% 0% 7.5% 0%;
             font-size: 1.175rem;
+        }
+
+        .copy_tex_option{
+            padding: 5% 0% 5% 0%;
         }
     }
