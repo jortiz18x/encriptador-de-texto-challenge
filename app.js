@@ -27,7 +27,7 @@ function Encrypt() {
         panel_secundario_resultado.style.justifyContent = "flex-start";
         input.select();
     } else {
-        alert("Por favor, ingrese un texto válido para encriptar.");
+        alert("Por favor, ingresa un texto válido para encriptar.");
         imagenMainTextInputEmpty.style.display = "block";
         titleMainTextInputEmpty.style.display = "block";
         textMainTextInputEmpty.style.display = "block";
@@ -56,7 +56,7 @@ function Desencrypt() {
         panel_secundario_resultado.style.justifyContent = "flex-start";
         input.select();
     } else {
-        alert("Por favor, ingrese un texto válido para desencriptar.");
+        alert("Por favor, ingresa un texto válido para desencriptar.");
         imagenMainTextInputEmpty.style.display = "block";
         titleMainTextInputEmpty.style.display = "block";
         textMainTextInputEmpty.style.display = "block";
