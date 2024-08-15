@@ -6,10 +6,10 @@
     }
 
     body {
-        background-color: #333333;
+        background: linear-gradient(to left, #333333, #882249, #333333);
         color: #FF4C4C;
         font-family: "Inter", sans-serif;
-        height: 95vh;
+        height: 100vh;
         box-sizing: border-box;
     }
 
@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0% 5% 0% 7.5%;
+        margin: 0% 5% 2.5% 7.5%;
         justify-content: center;
         gap: 6.25rem;
         width: 90%;
@@ -41,6 +41,7 @@
         color: #FF4C4C;
         font-family: "Inter", sans-serif;
         font-size: 2rem;
+        text-align: justify;
         background-color: transparent;
         border-color: transparent;
     }
@@ -104,12 +105,12 @@
     }
 
     .panel_principal_text_input_option_2:hover{
-        border: 1px solid black;
+        border: 1px solid white;
         background-color: #e2e6c9;
     }
 
     .panel_principal_text_input_option_2:active{
-        border: 2px solid black;
+        border: 2px solid white;
         background-color: #a6ae71;
     }
 
@@ -142,8 +143,17 @@
         line-height: normal;
     }
 
+    .footer{
+        color:#333333;
+        background-color: #c76b8e;
+        padding: 1.25rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+    }
 
-    @media (max-width: 1500px){
+
+    @media (max-width: 1100px){
 
         header{
             margin: 5% 0% 0% 0%;
@@ -165,6 +175,7 @@
 
         .panel_principal_text_input{
             width: 100%;
+            margin: auto;
             display: flex;
             flex-direction: column;
         }
@@ -205,7 +216,7 @@
             align-items: center;
             justify-content: center;
             width: 95%;
-            margin: 5% 0% 0% 0%;
+            margin: 5% 0% 10% 0%;
             height: auto;
             border-radius: 2rem;
             text-align: center;
@@ -238,7 +249,7 @@
         }
 
         .header_imagen{
-            margin-left: -1.5rem;
+            margin-left: -1.75rem;
         }
         
         .panel_principal{
@@ -253,12 +264,13 @@
 
         .panel_principal_text_input{
             width: 100%;
+            margin: auto;
             display: flex;
             flex-direction: column;
         }
 
         .main-text-input{
-            width: 95%;
+            width: 96%;
             margin: auto;
             height: 20rem;
             padding: 2.5% 0% 0% 0%;
@@ -297,6 +309,7 @@
             border-radius: 2rem;
             text-align: center;
             color: #343A40;
+            margin: 0% 0% 10% 0%
         }
 
         .panel_secundario_resultado_imagen{
